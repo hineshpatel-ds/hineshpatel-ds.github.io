@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hinesh Patel — Software Engineer | ML, Cloud &amp; Data Systems</title>
+<meta name="description" content="Portfolio of Hinesh Patel, a graduate Computer Science student who builds end-to-end software systems — data pipelines, cloud infrastructure, backend APIs, and applied ML. Open to co-op, internship, and new-grad roles.">
+<meta property="og:title" content="Hinesh Patel — Software Engineer | ML, Cloud &amp; Data Systems">
+<meta property="og:description" content="End-to-end software systems — pipelines, cloud infrastructure, APIs, and applied ML. Open to co-op, internship, and new-grad roles.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0d6e66">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230d6e66'/%3E%3Ctext x='50' y='69' font-size='58' font-family='Georgia,serif' font-weight='600' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,450;0,9..144,500;0,9..144,600;0,9..144,650;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#f4f6f5; --surface:#ffffff; --surface-2:#eceff0;
+    --ink:#141a1b; --muted:#53625f; --faint:#808e8b;
+    --line:#d9e0dd; --line-2:#c6d1cd;
+    --teal:#0d6e66; --teal-ink:#0a544e; --teal-soft:#dcece9;
+    --brass:#9c6b1a; --brass-ink:#835613; --brass-soft:#f0e6cf;
+    --shadow:0 1px 2px rgba(18,40,38,.05), 0 10px 30px rgba(18,40,38,.07);
+    --shadow-lg:0 2px 6px rgba(18,40,38,.06), 0 24px 60px rgba(18,40,38,.11);
+    --font-serif:"Fraunces","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,ui-serif,serif;
+    --font-sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --font-mono:"IBM Plex Mono","Cascadia Code","Cascadia Mono",Consolas,ui-monospace,"SF Mono",Menlo,monospace;
+    --maxw:1120px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0c1110; --surface:#121917; --surface-2:#18211f;
+      --ink:#e9efec; --muted:#98a7a3; --faint:#788682;
+      --line:#222e2b; --line-2:#2e3c38;
+      --teal:#4cb8aa; --teal-ink:#71ccbe; --teal-soft:#10302d;
+      --brass:#d4a353; --brass-ink:#e2b877; --brass-soft:#2a2113;
+      --shadow:0 1px 2px rgba(0,0,0,.35), 0 12px 34px rgba(0,0,0,.42);
+      --shadow-lg:0 2px 8px rgba(0,0,0,.4), 0 30px 70px rgba(0,0,0,.55);
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#f4f6f5; --surface:#ffffff; --surface-2:#eceff0;
+    --ink:#141a1b; --muted:#53625f; --faint:#808e8b;
+    --line:#d9e0dd; --line-2:#c6d1cd;
+    --teal:#0d6e66; --teal-ink:#0a544e; --teal-soft:#dcece9;
+    --brass:#9c6b1a; --brass-ink:#835613; --brass-soft:#f0e6cf;
+    --shadow:0 1px 2px rgba(18,40,38,.05), 0 10px 30px rgba(18,40,38,.07);
+    --shadow-lg:0 2px 6px rgba(18,40,38,.06), 0 24px 60px rgba(18,40,38,.11);
+  }
+  :root[data-theme="dark"]{
+    --bg:#0c1110; --surface:#121917; --surface-2:#18211f;
+    --ink:#e9efec; --muted:#98a7a3; --faint:#788682;
+    --line:#222e2b; --line-2:#2e3c38;
+    --teal:#4cb8aa; --teal-ink:#71ccbe; --teal-soft:#10302d;
+    --brass:#d4a353; --brass-ink:#e2b877; --brass-soft:#2a2113;
+    --shadow:0 1px 2px rgba(0,0,0,.35), 0 12px 34px rgba(0,0,0,.42);
+    --shadow-lg:0 2px 8px rgba(0,0,0,.4), 0 30px 70px rgba(0,0,0,.55);
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--font-sans); line-height:1.62; font-size:16.5px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{ color:var(--teal-ink); text-decoration:none; }
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 clamp(1.1rem,4vw,2rem); }
+
+  /* ---------- Nav ---------- */
+  nav.top{
+    position:sticky; top:0; z-index:20;
+    background:color-mix(in srgb, var(--bg) 86%, transparent);
+    backdrop-filter:blur(10px); border-bottom:1px solid var(--line);
+  }
+  nav.top .wrap{ display:flex; align-items:center; justify-content:space-between; height:58px; }
+  nav.top .brand{ font-family:var(--font-mono); font-size:.86rem; font-weight:600; letter-spacing:.02em; }
+  nav.top .brand .dot{ color:var(--teal); }
+  nav.top .links{ display:flex; align-items:center; gap:.3rem; }
+  nav.top .links a{ font-family:var(--font-mono); font-size:.78rem; color:var(--muted); padding:.4rem .6rem; border-radius:7px; }
+  nav.top .links a:hover{ color:var(--ink); background:var(--surface-2); }
+  nav.top .links a.cta{ color:var(--teal-ink); border:1px solid var(--teal); }
+  nav.top .links a.cta:hover{ background:var(--teal-soft); }
+  .nav-toggle{ display:none; align-items:center; justify-content:center; width:36px; height:36px; padding:0; border:1px solid var(--line-2); border-radius:8px; background:var(--surface); cursor:pointer; }
+  .nav-toggle svg{ width:17px; height:17px; color:var(--ink); }
+  .nav-toggle .i-close{ display:none; }
+  .nav-toggle[aria-expanded="true"] .i-open{ display:none; }
+  .nav-toggle[aria-expanded="true"] .i-close{ display:block; }
+  @media (max-width:680px){
+    nav.top .links a:not(.cta){ display:none; }
+    .nav-toggle{ display:inline-flex; }
+    nav.top .links{ gap:.5rem; }
+  }
+  .mobile-menu{ display:none; flex-direction:column; gap:.15rem; max-height:0; overflow:hidden; padding:0 clamp(1.1rem,4vw,2rem); border-top:0 solid var(--line); background:var(--bg); transition:max-height .25s ease, padding .25s ease; }
+  @media (max-width:680px){ .mobile-menu{ display:flex; } }
+  .mobile-menu.open{ max-height:320px; padding:.5rem clamp(1.1rem,4vw,2rem) 1rem; border-top-width:1px; }
+  .mobile-menu a{ font-family:var(--font-mono); font-size:.85rem; color:var(--muted); padding:.7rem .3rem; border-radius:7px; }
+  .mobile-menu a:hover{ color:var(--ink); background:var(--surface-2); }
+
+  /* ---------- Hero ---------- */
+  header.hero{ position:relative; overflow:hidden; border-bottom:1px solid var(--line); }
+  header.hero canvas{ position:absolute; inset:0; width:100%; height:100%; opacity:.5; pointer-events:none; }
+  @media (prefers-color-scheme:dark){ header.hero canvas{ opacity:.42; } }
+  header.hero .hmask{ position:absolute; inset:0; background:linear-gradient(180deg, transparent 30%, var(--bg) 96%); pointer-events:none; }
+  header.hero .wrap{ position:relative; z-index:2; padding:clamp(3.4rem,10vw,6rem) 0 clamp(2.6rem,7vw,4.2rem); }
+  .heyebrow{ font-family:var(--font-mono); font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--teal-ink); font-weight:600; margin:0 0 1.1rem; display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; }
+  .heyebrow .avail{ color:var(--brass-ink); }
+  .heyebrow .sep{ width:5px; height:5px; border-radius:50%; background:var(--line-2); }
+  h1.name{ font-family:var(--font-serif); font-weight:600; font-size:clamp(2.7rem,8.5vw,5rem); line-height:1; letter-spacing:-.015em; margin:0; text-wrap:balance; }
+  .thesis{ font-family:var(--font-serif); font-size:clamp(1.25rem,3.4vw,1.9rem); line-height:1.32; color:var(--ink); max-width:22ch; margin:1.5rem 0 0; font-weight:500; }
+  .thesis .hl{ color:var(--teal-ink); font-style:italic; }
+  .subline{ color:var(--muted); max-width:56ch; margin:1.1rem 0 0; font-size:1.02rem; }
+  .cta-row{ display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1.9rem; }
+  .btn{ display:inline-flex; align-items:center; gap:.5rem; font-family:var(--font-mono); font-size:.82rem; font-weight:600; padding:.62rem 1.05rem; border-radius:9px; border:1px solid var(--line-2); background:var(--surface); color:var(--ink); transition:transform .12s ease, box-shadow .12s ease; }
+  .btn:hover{ transform:translateY(-1px); box-shadow:var(--shadow); }
+  .btn.primary{ background:var(--teal); border-color:var(--teal); color:#fff; }
+  .btn.primary:hover{ box-shadow:0 8px 22px color-mix(in srgb, var(--teal) 45%, transparent); }
+  .btn svg{ width:15px; height:15px; }
+
+  /* ---------- Stat strip ---------- */
+  .stats{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  @media (max-width:640px){ .stats{ grid-template-columns:repeat(2,1fr); } }
+  .stat{ background:var(--bg); padding:1.5rem clamp(1rem,3vw,1.6rem); }
+  .stat .num{ font-family:var(--font-serif); font-size:clamp(1.8rem,4.4vw,2.5rem); font-weight:600; letter-spacing:-.02em; line-height:1; color:var(--teal-ink); font-variant-numeric:tabular-nums; }
+  .stat.brass .num{ color:var(--brass-ink); }
+  .stat .lbl{ font-size:.82rem; color:var(--muted); margin-top:.5rem; line-height:1.4; }
+
+  /* ---------- About ---------- */
+  .about-bio{ font-family:var(--font-serif); font-size:clamp(1.08rem,2.3vw,1.32rem); line-height:1.58; color:var(--ink); max-width:64ch; font-weight:450; }
+
+  /* ---------- Sections ---------- */
+  section{ padding:clamp(3rem,7vw,5rem) 0; }
+  .sec-eyebrow{ font-family:var(--font-mono); font-size:.74rem; letter-spacing:.16em; text-transform:uppercase; color:var(--teal); font-weight:600; margin:0 0 .7rem; display:flex; align-items:center; gap:.7rem; }
+  .sec-eyebrow::before{ content:""; width:26px; height:1px; background:var(--teal); opacity:.6; }
+  h2.sec{ font-family:var(--font-serif); font-weight:600; font-size:clamp(1.7rem,4.2vw,2.4rem); letter-spacing:-.015em; margin:0 0 .5rem; text-wrap:balance; }
+  .sec-intro{ color:var(--muted); max-width:60ch; margin:0 0 2.2rem; }
+
+  /* ---------- Projects ---------- */
+  .proj-grid{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.4rem,3vw,2rem); }
+  @media (max-width:760px){ .proj-grid{ grid-template-columns:1fr; } }
+  .proj{ display:flex; flex-direction:column; background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:1.9rem 2rem 1.8rem; box-shadow:var(--shadow); transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease; }
+  .proj:hover{ transform:translateY(-3px); box-shadow:var(--shadow-lg); border-color:var(--line-2); }
+  .proj.feature{ grid-column:1 / -1; padding:2.2rem 2.4rem 2.1rem; }
+  .proj.feature .p-top{ display:flex; flex-wrap:wrap; align-items:baseline; gap:.6rem 1rem; }
+  .p-kicker{ font-family:var(--font-mono); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--faint); display:flex; align-items:center; gap:.5rem; }
+  .p-kicker .flag{ color:var(--brass-ink); font-weight:700; }
+  .proj h3{ font-family:var(--font-serif); font-weight:600; font-size:1.32rem; letter-spacing:-.01em; margin:.75rem 0 0; }
+  .proj.feature h3{ font-size:1.6rem; }
+  .p-desc{ color:var(--muted); margin:1rem 0 0; font-size:.96rem; line-height:1.65; max-width:70ch; }
+  .p-desc strong{ color:var(--ink); }
+  .p-metrics{ display:flex; flex-wrap:wrap; gap:1.8rem; margin:1.6rem 0 .3rem; }
+  .p-metric .m{ font-family:var(--font-serif); font-size:1.35rem; font-weight:600; color:var(--teal-ink); line-height:1; font-variant-numeric:tabular-nums; }
+  .p-metric .ml{ font-size:.74rem; color:var(--faint); margin-top:.32rem; }
+  .stack{ display:flex; flex-wrap:wrap; gap:.5rem; margin:1.5rem 0 0; }
+  .stack span{ font-family:var(--font-mono); font-size:.7rem; color:var(--teal-ink); background:var(--teal-soft); padding:.24rem .58rem; border-radius:6px; }
+  .p-foot{ margin-top:auto; padding-top:1.5rem; border-top:1px solid var(--line); }
+  .proj.feature .p-foot{ margin-top:1.8rem; padding-top:1.6rem; }
+  .p-link{ font-family:var(--font-mono); font-size:.78rem; font-weight:600; color:var(--teal-ink); display:inline-flex; align-items:center; gap:.4rem; }
+  .p-link:hover{ gap:.6rem; }
+  .p-link svg{ width:14px; height:14px; transition:transform .12s ease; }
+  .p-note{ font-family:var(--font-mono); font-size:.74rem; color:var(--faint); }
+
+  /* ---------- Split: skills + awards ---------- */
+  .split{ display:grid; grid-template-columns:1.1fr 1fr; gap:clamp(2rem,5vw,3.5rem); }
+  @media (max-width:820px){ .split{ grid-template-columns:1fr; } }
+  .skgroup{ border-top:1px solid var(--line); padding:1rem 0; }
+  .skgroup:first-of-type{ border-top:none; padding-top:0; }
+  .skgroup .cat{ font-family:var(--font-mono); font-size:.74rem; letter-spacing:.06em; text-transform:uppercase; color:var(--faint); margin:0 0 .55rem; }
+  .chips{ display:flex; flex-wrap:wrap; gap:.4rem; }
+  .chip{ font-size:.82rem; color:var(--ink); background:var(--surface); border:1px solid var(--line); border-radius:7px; padding:.28rem .6rem; }
+
+  .award{ display:flex; gap:1rem; padding:1.05rem 0; border-top:1px solid var(--line); }
+  .award:first-of-type{ border-top:none; }
+  .award .place{ font-family:var(--font-mono); font-size:.74rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:#fff; background:var(--brass); border-radius:6px; padding:.28rem .5rem; height:fit-content; white-space:nowrap; }
+  .award .place.silver{ background:var(--muted); }
+  .award .place.bronze{ background:var(--brass); opacity:.72; }
+  .award .a-body h4{ margin:0; font-size:1rem; font-weight:650; }
+  .award .a-body .meta{ font-family:var(--font-mono); font-size:.74rem; color:var(--faint); margin:.2rem 0 .35rem; }
+  .award .a-body p{ margin:0; color:var(--muted); font-size:.9rem; max-width:52ch; }
+
+  /* ---------- Education ---------- */
+  .edu-grid{ display:grid; grid-template-columns:1fr 1fr; gap:1.3rem; }
+  @media (max-width:680px){ .edu-grid{ grid-template-columns:1fr; } }
+  .edu{ background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:1.4rem 1.5rem; box-shadow:var(--shadow); }
+  .edu .deg{ font-family:var(--font-serif); font-size:1.2rem; font-weight:600; margin:0; letter-spacing:-.01em; }
+  .edu .school{ color:var(--muted); margin:.25rem 0 .6rem; font-size:.94rem; }
+  .edu .when{ font-family:var(--font-mono); font-size:.74rem; color:var(--faint); }
+  .edu .gpa{ display:inline-flex; align-items:baseline; gap:.4rem; margin-top:.9rem; }
+  .edu .gpa .g{ font-family:var(--font-serif); font-size:1.5rem; font-weight:600; color:var(--teal-ink); }
+  .edu .gpa .gl{ font-size:.8rem; color:var(--muted); }
+  .edu .coursework{ margin:.9rem 0 0; font-size:.85rem; color:var(--muted); line-height:1.5; }
+
+  /* ---------- Contact ---------- */
+  section.contact{ border-top:1px solid var(--line); background:var(--surface-2); }
+  .contact-inner{ text-align:center; max-width:44ch; margin:0 auto; }
+  .contact h2{ font-family:var(--font-serif); font-size:clamp(1.9rem,5vw,2.7rem); font-weight:600; letter-spacing:-.02em; margin:0 0 .7rem; }
+  .contact p{ color:var(--muted); margin:0 0 1.8rem; }
+  .contact .avail-pill{ font-family:var(--font-mono); font-size:.76rem; color:var(--brass-ink); background:var(--brass-soft); border:1px solid color-mix(in srgb,var(--brass) 35%, transparent); border-radius:999px; padding:.35rem .8rem; display:inline-block; margin-bottom:1.4rem; }
+
+  footer{ padding:2rem 0 2.6rem; border-top:1px solid var(--line); }
+  footer .wrap{ display:flex; flex-wrap:wrap; gap:.6rem 1.4rem; justify-content:space-between; align-items:center; }
+  footer .fmono{ font-family:var(--font-mono); font-size:.76rem; color:var(--faint); }
+  footer a{ font-family:var(--font-mono); font-size:.78rem; color:var(--muted); }
+  footer a:hover{ color:var(--teal-ink); }
+
+  .reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+  @media (prefers-reduced-motion:reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <span class="brand">hinesh_patel<span class="dot">.</span></span>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#awards">Awards</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="cta">Get in touch</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">
+        <svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#awards">Awards</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Get in touch</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <canvas id="sig" aria-hidden="true"></canvas>
+  <div class="hmask"></div>
+  <div class="wrap">
+    <p class="heyebrow">
+      <span>Software Engineering · ML &amp; Cloud Systems</span><span class="sep"></span>
+      <span>MACS Candidate, Dalhousie</span><span class="sep"></span>
+      <span class="avail">Open to co-op, internship &amp; new-grad roles</span>
+    </p>
+    <h1 class="name">Hinesh Patel</h1>
+    <p class="thesis">I build <span class="hl">production-grade software systems</span> — from raw data to a live, tested endpoint.</p>
+    <p class="subline">Data pipelines, cloud infrastructure, backend APIs, and applied ML — containerized, tested, and shipped with CI on every commit. Graduate CS student who builds production-shaped systems, not just notebooks.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="mailto:hineshjayeshkumarpatel@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        Email me
+      </a>
+      <a class="btn" href="https://github.com/hineshpatel-ds" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.4 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.4-2.2-.2-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.8-2.4 4.7-4.6 4.9.3.3.6.9.6 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 22 12 10 10 0 0 0 12 2Z"/></svg>
+        GitHub
+      </a>
+      <a class="btn" href="https://linkedin.com/in/hinesh-patel-2b609a279" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="stat brass"><div class="num">2×</div><div class="lbl">1st-place finishes in AI &amp; innovation challenges</div></div>
+  <div class="stat"><div class="num">94.5%</div><div class="lbl">accuracy on a 48-hour EEG gaze-decoder</div></div>
+  <div class="stat"><div class="num">~16%</div><div class="lbl">MAE cut over baseline on a live forecasting service</div></div>
+  <div class="stat"><div class="num">4.0<span style="font-size:.55em;color:var(--muted)">/4.0</span></div><div class="lbl">graduate GPA — all A/A+ to date</div></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <p class="sec-eyebrow reveal">About</p>
+    <h2 class="sec reveal">Computer engineer turned systems builder</h2>
+    <p class="about-bio reveal">
+      <!-- TODO: personalize — hometown, what pulled you into ML/cloud, interests outside coursework -->
+      I started as a computer engineer, then gravitated toward the operational side of the job — the pipelines, infrastructure, and tooling that turn a trained model into something a team can actually depend on. That's what brought me to Dalhousie's Applied Computer Science program, where I've kept a 4.0 GPA while building the systems on this page. Outside coursework I compete: most of the projects below started as 48-hour hackathon or innovation-sprint builds, two of which took first place. I'm currently looking for a co-op, internship, or new-grad role where I can keep building things that ship, not just things that work in a notebook.
+    </p>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="wrap">
+    <p class="sec-eyebrow reveal">Selected work</p>
+    <h2 class="sec reveal">Systems, shipped end to end</h2>
+    <p class="sec-intro reveal">A few projects that show the full arc — data, service, and deployment — rather than a single script in isolation.</p>
+
+    <div class="proj-grid">
+      <!-- Flagship -->
+      <article class="proj feature reveal">
+        <div class="p-top">
+          <span class="p-kicker">MLOps · Data Engineering · ML</span>
+        </div>
+        <h3>HRM 311 Demand &amp; Staffing Forecasting</h3>
+        <p class="p-desc">A production-style platform predicting Halifax 311 service-call volume at 30-minute granularity, framed around a real operational trade-off: <strong>under-staffing drives abandoned calls, over-staffing drives cost</strong>. Prefect ingests municipal open data into PostgreSQL; dbt models it raw → staging → mart; Great Expectations gates data quality; an XGBoost model is tracked in MLflow, registered, and served through a FastAPI <code>/forecast</code> endpoint with a Streamlit dashboard — all tested in GitHub Actions on every push.</p>
+        <div class="p-metrics">
+          <div class="p-metric"><div class="m">~16%</div><div class="ml">MAE cut vs. seasonal-naive baseline</div></div>
+          <div class="p-metric"><div class="m">30-min</div><div class="ml">forecast granularity, 48-step horizon</div></div>
+          <div class="p-metric"><div class="m">raw → live</div><div class="ml">end-to-end, registry to endpoint</div></div>
+        </div>
+        <div class="stack"><span>Python</span><span>Prefect</span><span>dbt</span><span>PostgreSQL</span><span>Great Expectations</span><span>XGBoost</span><span>MLflow</span><span>FastAPI</span><span>Streamlit</span><span>GitHub Actions</span></div>
+        <div class="p-foot">
+          <a class="p-link" href="https://github.com/hineshpatel-ds/hrm-311-demand-forecasting" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- Medical Report Assistant -->
+      <article class="proj reveal">
+        <div class="p-top"><span class="p-kicker">GenAI · NLP</span></div>
+        <h3>Medical Report Assistant</h3>
+        <p class="p-desc">Fine-tuned a <strong>T5 transformer</strong> on ~5,000 de-identified clinical notes to summarize reports into plain language. Built privacy-first: synthetic demographics and EHRs via Faker so no real PHI ever entered the repo. Modular pipeline, Streamlit app, Dockerized, with pytest in CI.</p>
+        <div class="stack"><span>T5</span><span>HuggingFace</span><span>TF-IDF</span><span>Streamlit</span><span>Docker</span><span>pytest</span></div>
+        <div class="p-foot">
+          <a class="p-link" href="https://github.com/hineshpatel-ds/medical-report-assistance" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- NeuroHack -->
+      <article class="proj reveal">
+        <div class="p-top"><span class="p-kicker">Signal Processing · ML <span class="flag">· 3rd place</span></span></div>
+        <h3>SSVEP EEG Gaze Decoder</h3>
+        <p class="p-desc">Built in 48 hours at NeuroHack 2026: a decoder that classifies where a subject is looking purely from brainwave signals. Cleaned raw EEG in MNE-Python (notch, bandpass, ICA), extracted features with CCA, and chose an <strong>SVM (RBF)</strong> that separated brain states differing by as little as 0.43 Hz — after Random Forests underperformed on the time series.</p>
+        <div class="p-metrics">
+          <div class="p-metric"><div class="m">94.5%</div><div class="ml">accuracy, personalized calibration</div></div>
+          <div class="p-metric"><div class="m">60 → 1,500</div><div class="ml">samples via sliding-window augmentation</div></div>
+        </div>
+        <div class="stack"><span>MNE-Python</span><span>ICA / CCA</span><span>SVM (RBF)</span><span>scikit-learn</span></div>
+        <div class="p-foot"><span class="p-note">SURGE NeuroTech · Dalhousie · Apr 2026</span></div>
+      </article>
+
+      <!-- Cloud Disaster Response -->
+      <article class="proj reveal">
+        <div class="p-top"><span class="p-kicker">Cloud · DevOps · Serverless</span></div>
+        <h3>Cloud Disaster Response System</h3>
+        <p class="p-desc">A serverless incident-reporting system moving reports through OPEN → IN_PROGRESS → RESOLVED with responder alerts. Four Python 3.12 Lambdas behind an API Gateway HTTP API; browsers upload images straight to S3 via <strong>presigned URLs</strong>; SNS notifies on creation. Whole stack defined in CloudFormation, shipped through GitHub Actions.</p>
+        <div class="stack"><span>AWS Lambda</span><span>API Gateway</span><span>S3</span><span>SNS</span><span>CloudFormation</span><span>GitHub Actions</span></div>
+        <div class="p-foot">
+          <a class="p-link" href="https://github.com/hineshpatel-ds/cloud-disaster-response-system" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- FoilIQ -->
+      <article class="proj reveal">
+        <div class="p-top"><span class="p-kicker">Data Viz · Analytics</span></div>
+        <h3>FoilIQ — SailGP Ocean of Data</h3>
+        <p class="p-desc">A multi-tab Streamlit app with Plotly visualizations, a 3D foiling simulation driven by ride-height sensor data, race analytics, and a fan-facing "drama score." Surfaced the finding that <strong>foil management, not top speed</strong>, is the stronger predictor of race outcomes.</p>
+        <div class="stack"><span>Streamlit</span><span>Plotly</span><span>pandas</span><span>Time-series</span></div>
+        <div class="p-foot"><span class="p-note">SailGP "Foil Forward" Challenge · 2026</span></div>
+      </article>
+
+      <!-- Adaptive Goal Planner -->
+      <article class="proj reveal">
+        <div class="p-top"><span class="p-kicker">Full-stack · SWE</span></div>
+        <h3>Adaptive Goal Planner</h3>
+        <p class="p-desc">A full-stack goal-planning app — FastAPI backend, React frontend, MySQL — with Smart Notification and Personalized Roadmap subsystems. Built test-first at <strong>75%+ coverage</strong>, containerized with Docker Compose, deployed to EC2 via a GitLab CI/CD pipeline.</p>
+        <div class="stack"><span>FastAPI</span><span>React</span><span>MySQL</span><span>Docker Compose</span><span>GitLab CI</span><span>TDD</span></div>
+        <div class="p-foot"><span class="p-note">Graduate team project · CSCI 5408</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS + AWARDS -->
+<section id="skills" style="background:var(--surface-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="wrap split">
+    <div>
+      <p class="sec-eyebrow reveal">Toolkit</p>
+      <h2 class="sec reveal">Skills</h2>
+      <p class="sec-intro reveal" style="margin-bottom:1.6rem;">Depth across the full stack — data pipelines, ML tooling, cloud infrastructure, and CI — on both AWS and GCP.</p>
+      <div class="reveal">
+        <div class="skgroup"><p class="cat">ML / Deep Learning</p><div class="chips"><span class="chip">PyTorch</span><span class="chip">scikit-learn</span><span class="chip">XGBoost</span><span class="chip">HuggingFace</span><span class="chip">BERT · GPT-2 · T5</span><span class="chip">CNNs / RNNs</span><span class="chip">Transformers</span></div></div>
+        <div class="skgroup"><p class="cat">MLOps</p><div class="chips"><span class="chip">MLflow</span><span class="chip">Prefect</span><span class="chip">dbt</span><span class="chip">Great Expectations</span><span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">pytest · moto</span></div></div>
+        <div class="skgroup"><p class="cat">Cloud — AWS &amp; GCP</p><div class="chips"><span class="chip">Lambda</span><span class="chip">API Gateway</span><span class="chip">DynamoDB</span><span class="chip">S3</span><span class="chip">SNS / SQS</span><span class="chip">Comprehend</span><span class="chip">CloudFormation</span><span class="chip">Terraform</span><span class="chip">Dataproc</span></div></div>
+        <div class="skgroup"><p class="cat">Data &amp; Backend</p><div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Spark</span><span class="chip">FastAPI</span><span class="chip">Neo4j</span><span class="chip">MongoDB</span><span class="chip">3NF / ERD</span></div></div>
+      </div>
+    </div>
+    <div>
+      <p class="sec-eyebrow reveal" id="awards">Recognition</p>
+      <h2 class="sec reveal">Competitions &amp; awards</h2>
+      <p class="sec-intro reveal" style="margin-bottom:1.6rem;">A track record most co-op applicants don't have — built and pitched under time pressure.</p>
+      <div class="reveal">
+        <div class="award"><span class="place">1st</span><div class="a-body"><h4>Cognizant BrAInstorm Challenge</h4><p class="meta">Dalhousie × ShiftKey Labs · 2025</p><p>Won a 3-day AI challenge on UN SDGs 11/12/13 with a smart waste-bin that auto-detects and sorts each item at the point of disposal.</p></div></div>
+        <div class="award"><span class="place">1st</span><div class="a-body"><h4>Innovation Spirit Sprint</h4><p class="meta">Saint Mary's University · 2025</p><p>Won a 4-hour retail-innovation sprint for KingsPIER Vintage — a 3D storefront, AI inventory tagging, and a virtual upcycling studio, pitched to the owner.</p></div></div>
+        <div class="award"><span class="place silver">2nd</span><div class="a-body"><h4>Innovation Sprint</h4><p class="meta">Saint Mary's University · 2026</p><p>Delivered strategy recommendations for New Leaf Global Services Inc. directly to the founder.</p></div></div>
+        <div class="award"><span class="place bronze">3rd</span><div class="a-body"><h4>NeuroHack 2026 — BCI Hackathon</h4><p class="meta">SURGE NeuroTech · Dalhousie · 2026</p><p>The 94.5%-accuracy EEG gaze-decoder above, built in 48 hours.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="wrap">
+    <p class="sec-eyebrow reveal">Education</p>
+    <h2 class="sec reveal">Academic background</h2>
+    <div class="edu-grid" style="margin-top:1.8rem;">
+      <div class="edu reveal">
+        <p class="deg">M.Applied Computer Science</p>
+        <p class="school">Dalhousie University · Halifax, NS</p>
+        <p class="when">Sep 2025 — Expected 2027 · Co-op Jan–Apr 2027</p>
+        <div class="gpa"><span class="g">4.0</span><span class="gl">/ 4.0 · all A/A+, In Good Standing</span></div>
+        <p class="coursework">Advanced Cloud Architecting · Deep Learning Applications · Data Management, Warehousing &amp; Analytics · Advanced Software Development · Serverless Data Processing</p>
+      </div>
+      <div class="edu reveal">
+        <p class="deg">B.E. Computer Engineering</p>
+        <p class="school">Sarvajanik College of Engineering &amp; Technology · GTU</p>
+        <p class="when">Graduated 2024</p>
+        <p class="coursework" style="margin-top:1.4rem;">Foundations in data structures, algorithms, computer architecture, and software engineering — the groundwork for graduate ML and systems study.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="contact-inner">
+      <span class="avail-pill reveal">● Open to co-op, internship &amp; new-grad opportunities</span>
+      <h2 class="reveal">Let's build something.</h2>
+      <p class="reveal">Looking for a role where I can own real systems end to end — ML, cloud, or full-stack. Happy to talk about any of the work above.</p>
+      <div class="cta-row reveal" style="justify-content:center;">
+        <a class="btn primary" href="mailto:hineshjayeshkumarpatel@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          hineshjayeshkumarpatel@gmail.com
+        </a>
+        <a class="btn" href="https://github.com/hineshpatel-ds" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://linkedin.com/in/hinesh-patel-2b609a279" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="fmono">© 2026 Hinesh Patel</span>
+    <span class="fmono">Built end to end, like everything else here.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var c = document.getElementById('sig');
+  if(!c) return;
+  var ctx = c.getContext('2d');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var dpr = Math.min(window.devicePixelRatio||1, 2);
+  var W,H;
+  function accent(){
+    return getComputedStyle(document.documentElement).getPropertyValue('--teal').trim() || '#0d6e66';
+  }
+  function size(){
+    var r = c.getBoundingClientRect();
+    W = r.width; H = r.height;
+    c.width = W*dpr; c.height = H*dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+  }
+  size();
+  window.addEventListener('resize', size);
+
+  // layered forecast-like signal lines
+  var lines = [
+    {amp:0.10, freq:1.7, speed:0.14, yoff:0.42, alpha:0.9, w:2},
+    {amp:0.07, freq:2.6, speed:0.09, yoff:0.55, alpha:0.5, w:1.4},
+    {amp:0.045,freq:3.9, speed:0.20, yoff:0.34, alpha:0.35,w:1.1}
+  ];
+  function draw(t){
+    ctx.clearRect(0,0,W,H);
+    var col = accent();
+    for(var i=0;i<lines.length;i++){
+      var L=lines[i];
+      ctx.beginPath();
+      for(var x=0;x<=W;x+=6){
+        var nx = x/W;
+        var y = H*L.yoff
+              + Math.sin(nx*L.freq*Math.PI*2 + t*L.speed)*H*L.amp
+              + Math.sin(nx*L.freq*1.8*Math.PI*2 - t*L.speed*0.6)*H*L.amp*0.35;
+        if(x===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+      }
+      ctx.globalAlpha = L.alpha;
+      ctx.strokeStyle = col;
+      ctx.lineWidth = L.w;
+      ctx.lineJoin='round';
+      ctx.stroke();
+    }
+    // scatter of faint "data points" on the primary line
+    ctx.globalAlpha = 0.5;
+    ctx.fillStyle = col;
+    for(var k=0;k<=W;k+=64){
+      var nnx=k/W;
+      var yy=H*lines[0].yoff+Math.sin(nnx*lines[0].freq*Math.PI*2+t*lines[0].speed)*H*lines[0].amp
+             +Math.sin(nnx*lines[0].freq*1.8*Math.PI*2 - t*lines[0].speed*0.6)*H*lines[0].amp*0.35;
+      ctx.beginPath(); ctx.arc(k,yy,1.7,0,Math.PI*2); ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+  }
+  if(reduce){ draw(0); return; }
+  var start=null;
+  function frame(ts){
+    if(!start) start=ts;
+    draw((ts-start)/1000);
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+
+// mobile nav
+(function(){
+  var btn = document.getElementById('navToggle');
+  var menu = document.getElementById('mobileMenu');
+  if(!btn || !menu) return;
+  function close(){
+    btn.setAttribute('aria-expanded','false');
+    menu.classList.remove('open');
+  }
+  btn.addEventListener('click', function(){
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    menu.classList.toggle('open', !open);
+  });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', close); });
+  window.addEventListener('resize', function(){ if(window.innerWidth > 680) close(); });
+})();
+
+// scroll reveal
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
+  var io = new IntersectionObserver(function(ents){
+    ents.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, {threshold:0.12});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+</body>
+</html>
