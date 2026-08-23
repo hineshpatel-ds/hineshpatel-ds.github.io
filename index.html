@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hinesh Patel — Software Engineer | ML, Cloud &amp; Data Systems</title>
-<meta name="description" content="Portfolio of Hinesh Patel, a graduate Computer Science student who builds end-to-end software systems — data pipelines, cloud infrastructure, backend APIs, and applied ML. Open to co-op, internship, and new-grad roles.">
+<meta name="description" content="Portfolio of Hinesh Patel, a graduate Computer Science student who builds end-to-end software systems: data pipelines, cloud infrastructure, backend APIs, and applied ML. Open to co-op, internship, and new-grad roles.">
 <meta property="og:title" content="Hinesh Patel — Software Engineer | ML, Cloud &amp; Data Systems">
-<meta property="og:description" content="End-to-end software systems — pipelines, cloud infrastructure, APIs, and applied ML. Open to co-op, internship, and new-grad roles.">
+<meta property="og:description" content="End-to-end software systems: pipelines, cloud infrastructure, APIs, and applied ML. Open to co-op, internship, and new-grad roles.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0d6e66">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230d6e66'/%3E%3Ctext x='50' y='69' font-size='58' font-family='Georgia,serif' font-weight='600' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
@@ -179,6 +179,17 @@
   .award .a-body .meta{ font-family:var(--font-mono); font-size:.74rem; color:var(--faint); margin:.2rem 0 .35rem; }
   .award .a-body p{ margin:0; color:var(--muted); font-size:.9rem; max-width:52ch; }
 
+  /* ---------- Experience ---------- */
+  .exp-list{ display:flex; flex-direction:column; gap:1.3rem; margin-top:1.8rem; }
+  .exp{ background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:1.7rem 1.9rem; box-shadow:var(--shadow); }
+  .exp-head{ display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:.4rem 1rem; }
+  .exp-role{ font-family:var(--font-serif); font-size:1.22rem; font-weight:600; margin:0; letter-spacing:-.01em; }
+  .exp-org{ color:var(--muted); margin:.3rem 0 0; font-size:.93rem; }
+  .exp-when{ font-family:var(--font-mono); font-size:.74rem; color:var(--faint); white-space:nowrap; }
+  .exp-points{ margin:1rem 0 0; padding-left:1.15rem; color:var(--muted); font-size:.93rem; line-height:1.62; }
+  .exp-points li{ margin:.45rem 0; }
+  .exp-points strong{ color:var(--ink); }
+
   /* ---------- Education ---------- */
   .edu-grid{ display:grid; grid-template-columns:1fr 1fr; gap:1.3rem; }
   @media (max-width:680px){ .edu-grid{ grid-template-columns:1fr; } }
@@ -216,6 +227,7 @@
     <span class="brand">hinesh_patel<span class="dot">.</span></span>
     <div class="links">
       <a href="#about">About</a>
+      <a href="#experience">Experience</a>
       <a href="#work">Work</a>
       <a href="#skills">Skills</a>
       <a href="#awards">Awards</a>
@@ -229,6 +241,7 @@
   </div>
   <div class="mobile-menu" id="mobileMenu">
     <a href="#about">About</a>
+    <a href="#experience">Experience</a>
     <a href="#work">Work</a>
     <a href="#skills">Skills</a>
     <a href="#awards">Awards</a>
@@ -247,8 +260,8 @@
       <span class="avail">Open to co-op, internship &amp; new-grad roles</span>
     </p>
     <h1 class="name">Hinesh Patel</h1>
-    <p class="thesis">I build <span class="hl">production-grade software systems</span> — from raw data to a live, tested endpoint.</p>
-    <p class="subline">Data pipelines, cloud infrastructure, backend APIs, and applied ML — containerized, tested, and shipped with CI on every commit. Graduate CS student who builds production-shaped systems, not just notebooks.</p>
+    <p class="thesis">I build <span class="hl">production-grade software systems</span>, from raw data to a live, tested endpoint.</p>
+    <p class="subline">Data pipelines, cloud infrastructure, backend APIs, and applied ML, all containerized, tested, and shipped with CI on every commit. I'm a graduate CS student who builds production-shaped systems, not just notebooks.</p>
     <div class="cta-row">
       <a class="btn primary" href="mailto:hineshjayeshkumarpatel@gmail.com">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
@@ -270,7 +283,7 @@
   <div class="stat brass"><div class="num">2×</div><div class="lbl">1st-place finishes in AI &amp; innovation challenges</div></div>
   <div class="stat"><div class="num">94.5%</div><div class="lbl">accuracy on a 48-hour EEG gaze-decoder</div></div>
   <div class="stat"><div class="num">~16%</div><div class="lbl">MAE cut over baseline on a live forecasting service</div></div>
-  <div class="stat"><div class="num">4.0<span style="font-size:.55em;color:var(--muted)">/4.0</span></div><div class="lbl">graduate GPA — all A/A+ to date</div></div>
+  <div class="stat"><div class="num">4.0<span style="font-size:.55em;color:var(--muted)">/4.3</span></div><div class="lbl">graduate GPA, all A/A+ to date</div></div>
 </div>
 
 <!-- ABOUT -->
@@ -280,8 +293,45 @@
     <h2 class="sec reveal">Computer engineer turned systems builder</h2>
     <p class="about-bio reveal">
       <!-- TODO: personalize — hometown, what pulled you into ML/cloud, interests outside coursework -->
-      I started as a computer engineer, then gravitated toward the operational side of the job — the pipelines, infrastructure, and tooling that turn a trained model into something a team can actually depend on. That's what brought me to Dalhousie's Applied Computer Science program, where I've kept a 4.0 GPA while building the systems on this page. Outside coursework I compete: most of the projects below started as 48-hour hackathon or innovation-sprint builds, two of which took first place. I'm currently looking for a co-op, internship, or new-grad role where I can keep building things that ship, not just things that work in a notebook.
+      I started as a computer engineer, then gravitated toward the operational side of the job: the pipelines, infrastructure, and tooling that turn a trained model into something a team can actually depend on. That's what brought me to Dalhousie's Applied Computer Science program, where I've kept a 4.0 GPA while building the systems on this page. Outside coursework I compete. Most of the projects below started as 48-hour hackathon or innovation-sprint builds, two of which took first place. I'm currently looking for a co-op, internship, or new-grad role where I can keep building things that ship, not just things that work in a notebook.
     </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <p class="sec-eyebrow reveal">Experience</p>
+    <h2 class="sec reveal">Before graduate school</h2>
+    <p class="sec-intro reveal">Hands-on roles building and teaching software.</p>
+    <div class="exp-list">
+      <article class="exp reveal">
+        <div class="exp-head">
+          <div>
+            <h3 class="exp-role">Mobile App Development Intern</h3>
+            <p class="exp-org">MeshDroid Technologies · Navsari, India</p>
+          </div>
+          <span class="exp-when">Jan – Apr 2024</span>
+        </div>
+        <ul class="exp-points">
+          <li>Built patient- and doctor-facing booking flows end-to-end in <strong>Flutter</strong>, including appointment booking, time-slot selection, service-category screens, prescriptions, and wallet/redeem, all wired to live backend APIs via <strong>GetX</strong> controllers.</li>
+          <li>Implemented the full onboarding and auth flow (registration, login, password reset, OTP) with GetX controllers.</li>
+          <li>Led a refactor restructuring the codebase from a flat layout into role-based modules.</li>
+          <li>Top individual contributor by commit volume (41 commits) on a 4-person team; integrated <strong>Firebase</strong>, <strong>Agora RTC</strong> video calls, and <strong>Razorpay</strong> payments; shipped to Google Play Store as "MH Clinic-BP and Sugar Clinic."</li>
+        </ul>
+        <div class="stack"><span>Flutter</span><span>Dart</span><span>GetX</span><span>Firebase</span><span>Agora RTC</span><span>Razorpay</span></div>
+      </article>
+      <article class="exp reveal">
+        <div class="exp-head">
+          <div>
+            <h3 class="exp-role">Lecturer</h3>
+            <p class="exp-org">Jayvantrai Harrai Desai Polytechnic</p>
+          </div>
+          <span class="exp-when">Dec 2024 – Jun 2025</span>
+        </div>
+        <p class="p-desc" style="margin-top:.8rem;">Taught undergraduate computer engineering coursework, building communication and mentoring experience alongside the technical work above.</p>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -290,7 +340,7 @@
   <div class="wrap">
     <p class="sec-eyebrow reveal">Selected work</p>
     <h2 class="sec reveal">Systems, shipped end to end</h2>
-    <p class="sec-intro reveal">A few projects that show the full arc — data, service, and deployment — rather than a single script in isolation.</p>
+    <p class="sec-intro reveal">A few projects that show the full arc from data to service to deployment, rather than a single script in isolation.</p>
 
     <div class="proj-grid">
       <!-- Flagship -->
@@ -299,7 +349,7 @@
           <span class="p-kicker">MLOps · Data Engineering · ML</span>
         </div>
         <h3>HRM 311 Demand &amp; Staffing Forecasting</h3>
-        <p class="p-desc">A production-style platform predicting Halifax 311 service-call volume at 30-minute granularity, framed around a real operational trade-off: <strong>under-staffing drives abandoned calls, over-staffing drives cost</strong>. Prefect ingests municipal open data into PostgreSQL; dbt models it raw → staging → mart; Great Expectations gates data quality; an XGBoost model is tracked in MLflow, registered, and served through a FastAPI <code>/forecast</code> endpoint with a Streamlit dashboard — all tested in GitHub Actions on every push.</p>
+        <p class="p-desc">A production-style platform predicting Halifax 311 service-call volume at 30-minute granularity, framed around a real operational trade-off: <strong>under-staffing drives abandoned calls, over-staffing drives cost</strong>. Prefect ingests municipal open data into PostgreSQL; dbt models it raw → staging → mart; Great Expectations gates data quality; an XGBoost model is tracked in MLflow, registered, and served through a FastAPI <code>/forecast</code> endpoint with a Streamlit dashboard, all tested in GitHub Actions on every push.</p>
         <div class="p-metrics">
           <div class="p-metric"><div class="m">~16%</div><div class="ml">MAE cut vs. seasonal-naive baseline</div></div>
           <div class="p-metric"><div class="m">30-min</div><div class="ml">forecast granularity, 48-step horizon</div></div>
@@ -326,7 +376,7 @@
       <article class="proj reveal">
         <div class="p-top"><span class="p-kicker">Signal Processing · ML <span class="flag">· 3rd place</span></span></div>
         <h3>SSVEP EEG Gaze Decoder</h3>
-        <p class="p-desc">Built in 48 hours at NeuroHack 2026: a decoder that classifies where a subject is looking purely from brainwave signals. Cleaned raw EEG in MNE-Python (notch, bandpass, ICA), extracted features with CCA, and chose an <strong>SVM (RBF)</strong> that separated brain states differing by as little as 0.43 Hz — after Random Forests underperformed on the time series.</p>
+        <p class="p-desc">Built in 48 hours at NeuroHack 2026: a decoder that classifies where a subject is looking purely from brainwave signals. Cleaned raw EEG in MNE-Python (notch, bandpass, ICA), extracted features with CCA, and chose an <strong>SVM (RBF)</strong> that separated brain states differing by as little as 0.43 Hz, after Random Forests underperformed on the time series.</p>
         <div class="p-metrics">
           <div class="p-metric"><div class="m">94.5%</div><div class="ml">accuracy, personalized calibration</div></div>
           <div class="p-metric"><div class="m">60 → 1,500</div><div class="ml">samples via sliding-window augmentation</div></div>
@@ -352,7 +402,7 @@
       <!-- FoilIQ -->
       <article class="proj reveal">
         <div class="p-top"><span class="p-kicker">Data Viz · Analytics</span></div>
-        <h3>FoilIQ — SailGP Ocean of Data</h3>
+        <h3>FoilIQ: SailGP Ocean of Data</h3>
         <p class="p-desc">A multi-tab Streamlit app with Plotly visualizations, a 3D foiling simulation driven by ride-height sensor data, race analytics, and a fan-facing "drama score." Surfaced the finding that <strong>foil management, not top speed</strong>, is the stronger predictor of race outcomes.</p>
         <div class="stack"><span>Streamlit</span><span>Plotly</span><span>pandas</span><span>Time-series</span></div>
         <div class="p-foot"><span class="p-note">SailGP "Foil Forward" Challenge · 2026</span></div>
@@ -362,7 +412,7 @@
       <article class="proj reveal">
         <div class="p-top"><span class="p-kicker">Full-stack · LLM Agents · SWE</span></div>
         <h3>AI Wellness &amp; Goal Planner</h3>
-        <p class="p-desc">A full-stack wellness platform — FastAPI backend, React frontend, MySQL — where an <strong>LLM agent built on LangGraph</strong> decomposes each goal into a time-boxed roadmap, coaches the user through chat, and automatically re-plans when they fall behind. Clean layered architecture (service/repository/DTO), full JWT auth with email verification, 200+ backend tests, containerized with Docker Compose, deployed to EC2 via a GitLab CI/CD pipeline.</p>
+        <p class="p-desc">A full-stack wellness platform (FastAPI backend, React frontend, MySQL) where an <strong>LLM agent built on LangGraph</strong> decomposes each goal into a time-boxed roadmap, coaches the user through chat, and automatically re-plans when they fall behind. Clean layered architecture (service/repository/DTO), full JWT auth with email verification, 200+ backend tests, containerized with Docker Compose, deployed to EC2 via a GitLab CI/CD pipeline.</p>
         <div class="stack"><span>FastAPI</span><span>React</span><span>MySQL</span><span>LangGraph</span><span>Docker Compose</span><span>GitLab CI</span><span>TDD</span></div>
         <div class="p-foot" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.5rem;">
           <a class="p-link" href="https://github.com/hineshpatel-ds/ai-wellness-goal-planner" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
@@ -374,15 +424,18 @@
       <article class="proj reveal">
         <div class="p-top"><span class="p-kicker">NLP · Deep Learning</span></div>
         <h3>Quebec-French Acceptability Gap</h3>
-        <p class="p-desc">Pretrained French language models learn Standard (France) French, yet ~7M Canadians speak Quebec French — a variety with distinct syntax and anglicisms. Quantified that gap by scoring <strong>CamemBERT</strong> zero-shot via pseudo-log-likelihood, then fine-tuned it on QFrCoLA. Anglicisms stayed the hardest category even after fine-tuning. Shipped as a fully <strong>client-side demo</strong> — a quantized ONNX export running in-browser via Transformers.js, no backend.</p>
+        <p class="p-desc">Pretrained French language models learn Standard (France) French, yet roughly 7 million Canadians speak Quebec French, a variety with distinct syntax and anglicisms. Quantified that gap by scoring <strong>CamemBERT</strong> zero-shot via pseudo-log-likelihood, then fine-tuned it on QFrCoLA. Anglicisms stayed the hardest category even after fine-tuning. Compressed the fine-tuned model to <strong>ONNX with int8 quantization</strong> (442MB down to 111MB) and shipped it as a fully client-side demo running in-browser via Transformers.js, with no backend needed.</p>
         <div class="p-metrics">
           <div class="p-metric"><div class="m">83.3%</div><div class="ml">fine-tuned accuracy (vs. 48.9% zero-shot)</div></div>
           <div class="p-metric"><div class="m">0.603</div><div class="ml">MCC after fine-tuning (vs. 0.101 zero-shot)</div></div>
+          <div class="p-metric"><div class="m">442→111MB</div><div class="ml">model size after ONNX int8 quantization</div></div>
         </div>
-        <div class="stack"><span>CamemBERT</span><span>PyTorch</span><span>HuggingFace</span><span>ONNX</span><span>Transformers.js</span></div>
-        <div class="p-foot" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.5rem;">
+        <div class="stack"><span>CamemBERT</span><span>PyTorch</span><span>HuggingFace</span><span>ONNX</span><span>int8 quantization</span><span>Transformers.js</span></div>
+        <div class="p-foot" style="display:flex; align-items:center; flex-wrap:wrap; gap:.5rem 1.1rem;">
           <a class="p-link" href="https://github.com/hineshpatel-ds/quebec-french-acceptability-gap" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
           <a class="p-link" href="https://huggingface.co/spaces/hineshp6/quebec-french-acceptability" target="_blank" rel="noopener">Live demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          <a class="p-link" href="https://huggingface.co/hineshp6/camembert-qfrcola" target="_blank" rel="noopener">Model <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          <a class="p-link" href="https://huggingface.co/datasets/davebulaval/qfrcola" target="_blank" rel="noopener">Dataset <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
         </div>
       </article>
 
@@ -390,8 +443,13 @@
       <article class="proj reveal">
         <div class="p-top"><span class="p-kicker">Data Engineering · Analytics</span></div>
         <h3>Canadian Mortgage Renewal Shock</h3>
-        <p class="p-desc">A SQL data warehouse and dashboard modeling a live risk facing Canadian banks: mortgages from the 2020–2022 ultra-low-rate period renewing today at much higher rates. Pulls live <strong>Bank of Canada</strong> and <strong>StatCan</strong> data — no simulated numbers — into a SQLite star schema, computes payment shock and a provincial risk ranking, and forecasts rates with ARIMA(1,1,1). Presented through a Streamlit dashboard plus a stakeholder-ready slide deck, with a Power BI export path for the same analysis.</p>
-        <div class="stack"><span>Python</span><span>SQL</span><span>SQLite</span><span>Streamlit</span><span>Plotly</span><span>ARIMA</span><span>Power BI</span></div>
+        <p class="p-desc">A SQL data warehouse and dashboard modeling a live risk facing Canadian banks: mortgages from the 2020–2022 ultra-low-rate period renewing today at much higher rates. Pulls live <strong>Bank of Canada</strong> and <strong>StatCan</strong> data, no simulated numbers, into a SQLite star schema, computes payment shock and a provincial risk ranking, and forecasts rates with ARIMA(1,1,1). The posted 5-year rate now sits at <strong>6.09%</strong>, up from 4.79%, driving an estimated <strong>13.2% payment shock</strong> at renewal, with the highest exposure in Manitoba and Quebec. Presented through a Streamlit dashboard, a Power BI export, and an auto-generated PPTX stakeholder deck.</p>
+        <div class="p-metrics">
+          <div class="p-metric"><div class="m">6.09%</div><div class="ml">current 5-yr posted rate (was 4.79%)</div></div>
+          <div class="p-metric"><div class="m">+13.2%</div><div class="ml">estimated payment shock at renewal</div></div>
+          <div class="p-metric"><div class="m">MB &amp; QC</div><div class="ml">highest-exposure provinces</div></div>
+        </div>
+        <div class="stack"><span>Python</span><span>SQL</span><span>SQLite</span><span>Streamlit</span><span>Plotly</span><span>ARIMA / statsmodels</span><span>Power BI</span><span>DAX</span><span>python-pptx</span></div>
         <div class="p-foot">
           <a class="p-link" href="https://github.com/hineshpatel-ds/canadian-mortgage-renewal-shock" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
         </div>
@@ -406,23 +464,24 @@
     <div>
       <p class="sec-eyebrow reveal">Toolkit</p>
       <h2 class="sec reveal">Skills</h2>
-      <p class="sec-intro reveal" style="margin-bottom:1.6rem;">Depth across the full stack — data pipelines, ML tooling, cloud infrastructure, and CI — on both AWS and GCP.</p>
+      <p class="sec-intro reveal" style="margin-bottom:1.6rem;">Depth across the full stack: mobile, data pipelines, ML tooling, and cloud infrastructure and CI on both AWS and GCP.</p>
       <div class="reveal">
-        <div class="skgroup"><p class="cat">ML / Deep Learning</p><div class="chips"><span class="chip">PyTorch</span><span class="chip">scikit-learn</span><span class="chip">XGBoost</span><span class="chip">HuggingFace</span><span class="chip">BERT · GPT-2 · T5</span><span class="chip">CNNs / RNNs</span><span class="chip">Transformers</span></div></div>
-        <div class="skgroup"><p class="cat">MLOps</p><div class="chips"><span class="chip">MLflow</span><span class="chip">Prefect</span><span class="chip">dbt</span><span class="chip">Great Expectations</span><span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">pytest · moto</span></div></div>
-        <div class="skgroup"><p class="cat">Cloud — AWS &amp; GCP</p><div class="chips"><span class="chip">Lambda</span><span class="chip">API Gateway</span><span class="chip">DynamoDB</span><span class="chip">S3</span><span class="chip">SNS / SQS</span><span class="chip">Comprehend</span><span class="chip">CloudFormation</span><span class="chip">Terraform</span><span class="chip">Dataproc</span></div></div>
-        <div class="skgroup"><p class="cat">Data &amp; Backend</p><div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Spark</span><span class="chip">FastAPI</span><span class="chip">Neo4j</span><span class="chip">MongoDB</span><span class="chip">3NF / ERD</span></div></div>
+        <div class="skgroup"><p class="cat">ML / Deep Learning</p><div class="chips"><span class="chip">PyTorch</span><span class="chip">scikit-learn</span><span class="chip">XGBoost</span><span class="chip">HuggingFace</span><span class="chip">BERT · CamemBERT · GPT-2 · T5</span><span class="chip">CNNs / RNNs</span><span class="chip">Transformers</span><span class="chip">Pseudo-log-likelihood scoring</span></div></div>
+        <div class="skgroup"><p class="cat">MLOps</p><div class="chips"><span class="chip">MLflow</span><span class="chip">Prefect</span><span class="chip">dbt</span><span class="chip">Great Expectations</span><span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">pytest · moto</span><span class="chip">ONNX</span><span class="chip">Model quantization</span></div></div>
+        <div class="skgroup"><p class="cat">Mobile</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Kotlin</span><span class="chip">Swift</span><span class="chip">GetX</span><span class="chip">Firebase</span></div></div>
+        <div class="skgroup"><p class="cat">Cloud (AWS &amp; GCP)</p><div class="chips"><span class="chip">Lambda</span><span class="chip">API Gateway</span><span class="chip">DynamoDB</span><span class="chip">S3</span><span class="chip">SNS / SQS</span><span class="chip">Comprehend</span><span class="chip">CloudFormation</span><span class="chip">Terraform</span><span class="chip">Dataproc</span></div></div>
+        <div class="skgroup"><p class="cat">Data &amp; Backend</p><div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Spark</span><span class="chip">FastAPI</span><span class="chip">Neo4j</span><span class="chip">MongoDB</span><span class="chip">3NF / ERD</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">ARIMA / statsmodels</span><span class="chip">python-pptx</span></div></div>
       </div>
     </div>
     <div>
       <p class="sec-eyebrow reveal" id="awards">Recognition</p>
       <h2 class="sec reveal">Competitions &amp; awards</h2>
-      <p class="sec-intro reveal" style="margin-bottom:1.6rem;">A track record most co-op applicants don't have — built and pitched under time pressure.</p>
+      <p class="sec-intro reveal" style="margin-bottom:1.6rem;">A track record most co-op applicants don't have, built and pitched under time pressure.</p>
       <div class="reveal">
         <div class="award"><span class="place">1st</span><div class="a-body"><h4>Cognizant BrAInstorm Challenge</h4><p class="meta">Dalhousie × ShiftKey Labs · 2025</p><p>Won a 3-day AI challenge on UN SDGs 11/12/13 with a smart waste-bin that auto-detects and sorts each item at the point of disposal.</p></div></div>
-        <div class="award"><span class="place">1st</span><div class="a-body"><h4>Innovation Spirit Sprint</h4><p class="meta">Saint Mary's University · 2025</p><p>Won a 4-hour retail-innovation sprint for KingsPIER Vintage — a 3D storefront, AI inventory tagging, and a virtual upcycling studio, pitched to the owner.</p></div></div>
+        <div class="award"><span class="place">1st</span><div class="a-body"><h4>Innovation Spirit Sprint</h4><p class="meta">Saint Mary's University · 2025</p><p>Won a 4-hour retail-innovation sprint for KingsPIER Vintage: a 3D storefront, AI inventory tagging, and a virtual upcycling studio, pitched to the owner.</p></div></div>
         <div class="award"><span class="place silver">2nd</span><div class="a-body"><h4>Innovation Sprint</h4><p class="meta">Saint Mary's University · 2026</p><p>Delivered strategy recommendations for New Leaf Global Services Inc. directly to the founder.</p></div></div>
-        <div class="award"><span class="place bronze">3rd</span><div class="a-body"><h4>NeuroHack 2026 — BCI Hackathon</h4><p class="meta">SURGE NeuroTech · Dalhousie · 2026</p><p>The 94.5%-accuracy EEG gaze-decoder above, built in 48 hours.</p></div></div>
+        <div class="award"><span class="place bronze">3rd</span><div class="a-body"><h4>NeuroHack 2026: BCI Hackathon</h4><p class="meta">SURGE NeuroTech · Dalhousie · 2026</p><p>The 94.5%-accuracy EEG gaze-decoder above, built in 48 hours.</p></div></div>
       </div>
     </div>
   </div>
@@ -437,15 +496,15 @@
       <div class="edu reveal">
         <p class="deg">M.Applied Computer Science</p>
         <p class="school">Dalhousie University · Halifax, NS</p>
-        <p class="when">Sep 2025 — Expected 2027 · Co-op Jan–Apr 2027</p>
-        <div class="gpa"><span class="g">4.0</span><span class="gl">/ 4.0 · all A/A+, In Good Standing</span></div>
+        <p class="when">Sep 2025, Expected 2027 · Co-op Jan–Aug 2027</p>
+        <div class="gpa"><span class="g">4.0</span><span class="gl">/ 4.3 · all A/A+, In Good Standing</span></div>
         <p class="coursework">Advanced Cloud Architecting · Deep Learning Applications · Data Management, Warehousing &amp; Analytics · Advanced Software Development · Serverless Data Processing</p>
       </div>
       <div class="edu reveal">
         <p class="deg">B.E. Computer Engineering</p>
         <p class="school">Sarvajanik College of Engineering &amp; Technology · GTU</p>
         <p class="when">Graduated 2024</p>
-        <p class="coursework" style="margin-top:1.4rem;">Foundations in data structures, algorithms, computer architecture, and software engineering — the groundwork for graduate ML and systems study.</p>
+        <p class="coursework" style="margin-top:1.4rem;">Foundations in data structures, algorithms, computer architecture, and software engineering, laying the groundwork for graduate ML and systems study.</p>
       </div>
     </div>
   </div>
@@ -457,7 +516,7 @@
     <div class="contact-inner">
       <span class="avail-pill reveal">● Open to co-op, internship &amp; new-grad opportunities</span>
       <h2 class="reveal">Let's build something.</h2>
-      <p class="reveal">Looking for a role where I can own real systems end to end — ML, cloud, or full-stack. Happy to talk about any of the work above.</p>
+      <p class="reveal">Looking for a role where I can own real systems end to end, whether that's ML, cloud, or full-stack. Happy to talk about any of the work above.</p>
       <div class="cta-row reveal" style="justify-content:center;">
         <a class="btn primary" href="mailto:hineshjayeshkumarpatel@gmail.com">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
