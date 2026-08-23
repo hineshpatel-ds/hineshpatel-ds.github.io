@@ -332,7 +332,10 @@
           <div class="p-metric"><div class="m">60 → 1,500</div><div class="ml">samples via sliding-window augmentation</div></div>
         </div>
         <div class="stack"><span>MNE-Python</span><span>ICA / CCA</span><span>SVM (RBF)</span><span>scikit-learn</span></div>
-        <div class="p-foot"><span class="p-note">SURGE NeuroTech · Dalhousie · Apr 2026</span></div>
+        <div class="p-foot" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.5rem;">
+          <a class="p-link" href="https://github.com/hineshpatel-ds/neurohack-2026-ssvep-decoder" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          <span class="p-note">SURGE NeuroTech · Dalhousie · Apr 2026</span>
+        </div>
       </article>
 
       <!-- Cloud Disaster Response -->
@@ -355,13 +358,43 @@
         <div class="p-foot"><span class="p-note">SailGP "Foil Forward" Challenge · 2026</span></div>
       </article>
 
-      <!-- Adaptive Goal Planner -->
+      <!-- AI Wellness & Goal Planner -->
       <article class="proj reveal">
-        <div class="p-top"><span class="p-kicker">Full-stack · SWE</span></div>
-        <h3>Adaptive Goal Planner</h3>
-        <p class="p-desc">A full-stack goal-planning app — FastAPI backend, React frontend, MySQL — with Smart Notification and Personalized Roadmap subsystems. Built test-first at <strong>75%+ coverage</strong>, containerized with Docker Compose, deployed to EC2 via a GitLab CI/CD pipeline.</p>
-        <div class="stack"><span>FastAPI</span><span>React</span><span>MySQL</span><span>Docker Compose</span><span>GitLab CI</span><span>TDD</span></div>
-        <div class="p-foot"><span class="p-note">Graduate team project · CSCI 5408</span></div>
+        <div class="p-top"><span class="p-kicker">Full-stack · LLM Agents · SWE</span></div>
+        <h3>AI Wellness &amp; Goal Planner</h3>
+        <p class="p-desc">A full-stack wellness platform — FastAPI backend, React frontend, MySQL — where an <strong>LLM agent built on LangGraph</strong> decomposes each goal into a time-boxed roadmap, coaches the user through chat, and automatically re-plans when they fall behind. Clean layered architecture (service/repository/DTO), full JWT auth with email verification, 200+ backend tests, containerized with Docker Compose, deployed to EC2 via a GitLab CI/CD pipeline.</p>
+        <div class="stack"><span>FastAPI</span><span>React</span><span>MySQL</span><span>LangGraph</span><span>Docker Compose</span><span>GitLab CI</span><span>TDD</span></div>
+        <div class="p-foot" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.5rem;">
+          <a class="p-link" href="https://github.com/hineshpatel-ds/ai-wellness-goal-planner" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          <span class="p-note">Graduate team project · CSCI 5308</span>
+        </div>
+      </article>
+
+      <!-- Quebec French Acceptability Gap -->
+      <article class="proj reveal">
+        <div class="p-top"><span class="p-kicker">NLP · Deep Learning</span></div>
+        <h3>Quebec-French Acceptability Gap</h3>
+        <p class="p-desc">Pretrained French language models learn Standard (France) French, yet ~7M Canadians speak Quebec French — a variety with distinct syntax and anglicisms. Quantified that gap by scoring <strong>CamemBERT</strong> zero-shot via pseudo-log-likelihood, then fine-tuned it on QFrCoLA. Anglicisms stayed the hardest category even after fine-tuning. Shipped as a fully <strong>client-side demo</strong> — a quantized ONNX export running in-browser via Transformers.js, no backend.</p>
+        <div class="p-metrics">
+          <div class="p-metric"><div class="m">83.3%</div><div class="ml">fine-tuned accuracy (vs. 48.9% zero-shot)</div></div>
+          <div class="p-metric"><div class="m">0.603</div><div class="ml">MCC after fine-tuning (vs. 0.101 zero-shot)</div></div>
+        </div>
+        <div class="stack"><span>CamemBERT</span><span>PyTorch</span><span>HuggingFace</span><span>ONNX</span><span>Transformers.js</span></div>
+        <div class="p-foot" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.5rem;">
+          <a class="p-link" href="https://github.com/hineshpatel-ds/quebec-french-acceptability-gap" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          <a class="p-link" href="https://huggingface.co/spaces/hineshp6/quebec-french-acceptability" target="_blank" rel="noopener">Live demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
+      <!-- Canadian Mortgage Renewal Shock -->
+      <article class="proj reveal">
+        <div class="p-top"><span class="p-kicker">Data Engineering · Analytics</span></div>
+        <h3>Canadian Mortgage Renewal Shock</h3>
+        <p class="p-desc">A SQL data warehouse and dashboard modeling a live risk facing Canadian banks: mortgages from the 2020–2022 ultra-low-rate period renewing today at much higher rates. Pulls live <strong>Bank of Canada</strong> and <strong>StatCan</strong> data — no simulated numbers — into a SQLite star schema, computes payment shock and a provincial risk ranking, and forecasts rates with ARIMA(1,1,1). Presented through a Streamlit dashboard plus a stakeholder-ready slide deck, with a Power BI export path for the same analysis.</p>
+        <div class="stack"><span>Python</span><span>SQL</span><span>SQLite</span><span>Streamlit</span><span>Plotly</span><span>ARIMA</span><span>Power BI</span></div>
+        <div class="p-foot">
+          <a class="p-link" href="https://github.com/hineshpatel-ds/canadian-mortgage-renewal-shock" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
       </article>
     </div>
   </div>
