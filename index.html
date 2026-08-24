@@ -454,6 +454,21 @@
           <a class="p-link" href="https://github.com/hineshpatel-ds/canadian-mortgage-renewal-shock" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
         </div>
       </article>
+
+      <!-- DocuRAG -->
+      <article class="proj reveal">
+        <div class="p-top"><span class="p-kicker">GenAI · RAG · Search</span></div>
+        <h3>DocuRAG</h3>
+        <p class="p-desc">A local, production-shaped RAG system for answering questions over technical documentation, indexed here on the FastAPI docs but domain-agnostic. Runs entirely on-device through <strong>Ollama</strong>, no API keys or cloud calls for generation. Fuses BM25 lexical search with Chroma vector search using Reciprocal Rank Fusion, then reranks the merged candidates with a cross-encoder before generation. Every answer is checked for real citations afterward; a failing one gets regenerated once, and if it still fails it's kept but flagged rather than trusted blindly.</p>
+        <div class="p-metrics">
+          <div class="p-metric"><div class="m">BM25 + vector</div><div class="ml">fused via Reciprocal Rank Fusion</div></div>
+          <div class="p-metric"><div class="m">~45</div><div class="ml">offline tests, mocked HTTP</div></div>
+        </div>
+        <div class="stack"><span>Python</span><span>Ollama</span><span>Chroma</span><span>BM25</span><span>Cross-encoder rerank</span><span>pytest</span><span>ruff</span><span>GitHub Actions</span></div>
+        <div class="p-foot">
+          <a class="p-link" href="https://github.com/hineshpatel-ds/docu-rag" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -466,7 +481,7 @@
       <h2 class="sec reveal">Skills</h2>
       <p class="sec-intro reveal" style="margin-bottom:1.6rem;">Depth across the full stack: mobile, data pipelines, ML tooling, and cloud infrastructure and CI on both AWS and GCP.</p>
       <div class="reveal">
-        <div class="skgroup"><p class="cat">ML / Deep Learning</p><div class="chips"><span class="chip">PyTorch</span><span class="chip">scikit-learn</span><span class="chip">XGBoost</span><span class="chip">HuggingFace</span><span class="chip">BERT · CamemBERT · GPT-2 · T5</span><span class="chip">CNNs / RNNs</span><span class="chip">Transformers</span><span class="chip">Pseudo-log-likelihood scoring</span></div></div>
+        <div class="skgroup"><p class="cat">ML / Deep Learning</p><div class="chips"><span class="chip">PyTorch</span><span class="chip">scikit-learn</span><span class="chip">XGBoost</span><span class="chip">HuggingFace</span><span class="chip">BERT · CamemBERT · GPT-2 · T5</span><span class="chip">CNNs / RNNs</span><span class="chip">Transformers</span><span class="chip">Pseudo-log-likelihood scoring</span><span class="chip">RAG</span><span class="chip">Ollama</span><span class="chip">Chroma</span><span class="chip">Hybrid retrieval (BM25)</span><span class="chip">Cross-encoder reranking</span></div></div>
         <div class="skgroup"><p class="cat">MLOps</p><div class="chips"><span class="chip">MLflow</span><span class="chip">Prefect</span><span class="chip">dbt</span><span class="chip">Great Expectations</span><span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">pytest · moto</span><span class="chip">ONNX</span><span class="chip">Model quantization</span></div></div>
         <div class="skgroup"><p class="cat">Mobile</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Kotlin</span><span class="chip">Swift</span><span class="chip">GetX</span><span class="chip">Firebase</span></div></div>
         <div class="skgroup"><p class="cat">Cloud (AWS &amp; GCP)</p><div class="chips"><span class="chip">Lambda</span><span class="chip">API Gateway</span><span class="chip">DynamoDB</span><span class="chip">S3</span><span class="chip">SNS / SQS</span><span class="chip">Comprehend</span><span class="chip">CloudFormation</span><span class="chip">Terraform</span><span class="chip">Dataproc</span></div></div>
