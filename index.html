@@ -361,6 +361,25 @@
         </div>
       </article>
 
+      <!-- Claims Adjudication Service -->
+      <article class="proj feature reveal">
+        <div class="p-top">
+          <span class="p-kicker">Backend · Java · DevOps</span>
+        </div>
+        <h3>Claims Adjudication &amp; Payout Service</h3>
+        <p class="p-desc">A Spring Boot REST service that moves insurance claims through a controlled lifecycle and pays approved amounts out through an immutable double-entry ledger. Built around the failure modes regulated industries actually hit: two adjusters deciding the same claim, a retried request creating a duplicate payout, and an audit trail nobody can trust because it can quietly be edited. Every guarantee is enforced twice, once in application code and once in the database, since application code can be changed, bypassed, or simply wrong. The concurrency tests run eight threads against real PostgreSQL and check not just that one wins, but that every loser is told.</p>
+        <div class="p-metrics">
+          <div class="p-metric"><div class="m">121</div><div class="ml">tests, incl. concurrency tests on real PostgreSQL</div></div>
+          <div class="p-metric"><div class="m">88.2%</div><div class="ml">test coverage (SonarQube)</div></div>
+          <div class="p-metric"><div class="m">A · A · A</div><div class="ml">SonarQube: reliability, security, maintainability</div></div>
+        </div>
+        <div class="stack"><span>Java 21</span><span>Spring Boot</span><span>PostgreSQL</span><span>Flyway</span><span>Testcontainers</span><span>Docker</span><span>GitHub Actions</span><span>SonarQube</span><span>Snyk</span></div>
+        <div class="p-foot" style="display:flex; align-items:center; flex-wrap:wrap; gap:.5rem 1.1rem;">
+          <a class="p-link" href="https://github.com/hineshpatel-ds/claims-adjudication-service" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          <a class="p-link" href="https://sonarcloud.io/summary/overall?id=hineshpatel-ds_claims-adjudication-service" target="_blank" rel="noopener">Quality dashboard <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </article>
+
       <!-- Medical Report Assistant -->
       <article class="proj reveal">
         <div class="p-top"><span class="p-kicker">GenAI · NLP</span></div>
@@ -483,6 +502,7 @@
       <div class="reveal">
         <div class="skgroup"><p class="cat">ML / Deep Learning</p><div class="chips"><span class="chip">PyTorch</span><span class="chip">scikit-learn</span><span class="chip">XGBoost</span><span class="chip">HuggingFace</span><span class="chip">BERT · CamemBERT · GPT-2 · T5</span><span class="chip">CNNs / RNNs</span><span class="chip">Transformers</span><span class="chip">Pseudo-log-likelihood scoring</span><span class="chip">RAG</span><span class="chip">Ollama</span><span class="chip">Chroma</span><span class="chip">Hybrid retrieval (BM25)</span><span class="chip">Cross-encoder reranking</span></div></div>
         <div class="skgroup"><p class="cat">MLOps</p><div class="chips"><span class="chip">MLflow</span><span class="chip">Prefect</span><span class="chip">dbt</span><span class="chip">Great Expectations</span><span class="chip">Docker</span><span class="chip">GitHub Actions</span><span class="chip">pytest · moto</span><span class="chip">ONNX</span><span class="chip">Model quantization</span></div></div>
+        <div class="skgroup"><p class="cat">Backend &amp; DevOps (Java)</p><div class="chips"><span class="chip">Java 21</span><span class="chip">Spring Boot</span><span class="chip">Spring Data JPA / Hibernate</span><span class="chip">Testcontainers</span><span class="chip">Flyway</span><span class="chip">SonarQube</span><span class="chip">Snyk</span><span class="chip">Optimistic locking</span><span class="chip">Idempotency</span></div></div>
         <div class="skgroup"><p class="cat">Mobile</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Kotlin</span><span class="chip">Swift</span><span class="chip">GetX</span><span class="chip">Firebase</span></div></div>
         <div class="skgroup"><p class="cat">Cloud (AWS &amp; GCP)</p><div class="chips"><span class="chip">Lambda</span><span class="chip">API Gateway</span><span class="chip">DynamoDB</span><span class="chip">S3</span><span class="chip">SNS / SQS</span><span class="chip">Comprehend</span><span class="chip">CloudFormation</span><span class="chip">Terraform</span><span class="chip">Dataproc</span></div></div>
         <div class="skgroup"><p class="cat">Data &amp; Backend</p><div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Spark</span><span class="chip">FastAPI</span><span class="chip">Neo4j</span><span class="chip">MongoDB</span><span class="chip">3NF / ERD</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">ARIMA / statsmodels</span><span class="chip">python-pptx</span></div></div>
